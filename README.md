@@ -19,7 +19,7 @@ services:
         - NET_ADMIN
     restart: always
     ports:
-      - "1443:3128"
+      - "443:3128"
     volumes:
       - ./mtg.toml:/config/mtg.toml
       - /etc/timezone:/etc/timezone:ro
