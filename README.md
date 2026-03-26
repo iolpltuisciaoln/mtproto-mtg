@@ -66,7 +66,7 @@ ntpdate pool.ntp.org
 
 ### 5. Start Proxy
 ```sh
-docker compose up mtg -d
+docker compose up -d
 ```
 
 #### 6. Profit
