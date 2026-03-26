@@ -1,0 +1,12 @@
+# DisneyLand/mtg.toml
+secret = " PUT YOUR SECRET HERE "
+
+bind-to = "0.0.0.0:3128"
+debug = false
+tolerate-time-skewness = "5m"
+
+[network]
+  domain = "www.google.com"
+
+[stats]
+  enabled = false

@@ -1,0 +1,14 @@
+services:
+  mtg:
+    container_name: mtg
+    image: nineseconds/mtg:2
+    cap_add:
+        - NET_ADMIN
+    restart: always
+    ports:
+      - "1443:3128"
+    volumes:
+      - ./mtg.toml:/config/mtg.toml
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    command: run /config/mtg.toml
